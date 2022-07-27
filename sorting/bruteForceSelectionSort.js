@@ -3,7 +3,6 @@ function selectionSort(input) {
         let min = input[sortedIndex];
         let indexAtMin = sortedIndex;
 
-
         for (let unsortedIndex = sortedIndex + 1; unsortedIndex < input.length; unsortedIndex++) {
             if (input[unsortedIndex] < min) {
                 min = input[unsortedIndex];
@@ -19,4 +18,7 @@ function selectionSort(input) {
     return input;
 }
 
-console.log(selectionSort([9,5,6,7,3,6,8,9,1,2,3,3,6,1]));
+// Runtime = O(n^2)
+// Space = O(1)
+
+console.log(selectionSort([9, 5, 6, 7, 3, 6, 8, 9, 1, 2, 3, 3, 6, 1]));
